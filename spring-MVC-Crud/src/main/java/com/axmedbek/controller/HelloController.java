@@ -55,7 +55,7 @@ public class HelloController {
     }
 
     @RequestMapping("/delete/{id}")
-    public String deletePerson(@ModelAttribute("person") Person person, @PathVariable("id") int id)
+    public String deletePerson(@PathVariable("id") int id)
     {
 
         personDao.delete(id);
